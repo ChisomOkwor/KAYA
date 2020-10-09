@@ -1,14 +1,14 @@
 # KAYA 
-### Your No. 1 travel lauggage management app
+### Your No. 1 travel luggage management app
 
 #### An android application for the BE-SMART Hacakthon
 
-* Functionality 1: Augumented Reality Carry-On Baggage Comparer
+* Functionality 1: Augmented Reality Carry-On luggage Comparision tool
 
-* Functionality 2(PAID): Baggage weight estimator using ML algorithms
+* Functionality 2(PAID): Extra luggage purchase tool
 
-##### Utilizes:
-* Master Card API
-* Google AR CORE 
+##### Repo Topics Utilized:
+* mastercard
+* google
 * ETC.
 
