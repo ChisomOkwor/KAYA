@@ -1,4 +1,5 @@
-# KAYA- Your No. 1 travel lauggage management app
+# KAYA 
+### - Your No. 1 travel lauggage management app
 
 #### An android application for the BE-SMART Hacakthon
 
