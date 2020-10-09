@@ -7,7 +7,7 @@
 
 * Functionality 2(PAID): Baggage weight estimator using ML algorithms
 
-##### UTILIZES:
+##### Utilizes:
 * Master Card API
 * Google AR CORE 
 * ETC.
