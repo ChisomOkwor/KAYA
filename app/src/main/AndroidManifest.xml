@@ -27,5 +27,5 @@
         <!-- Indicates whether "Google Play Services for AR" (ARCore) is "required" or "optional". -->
         <meta-data android:name="com.google.ar.core" android:value="required" />
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
