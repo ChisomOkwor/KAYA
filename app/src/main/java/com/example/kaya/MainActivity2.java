@@ -25,11 +25,11 @@ import com.google.ar.sceneform.ux.ArFragment;
 import com.google.ar.sceneform.ux.BaseArFragment;
 import com.google.ar.sceneform.ux.TransformableNode;
 
-public class MainActivity2 extends AppCompatActivity  implements  View.OnClickListener {
+public class MainActivity2 extends AppCompatActivity implements  View.OnClickListener {
     Button bagEstimatorButton;
     Button vrService;
 
-    ArFragment arFragment;
+    private ArFragment arFragment;
     private ModelRenderable modelRenderable;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -39,11 +39,11 @@ public class MainActivity2 extends AppCompatActivity  implements  View.OnClickLi
         setContentView(R.layout.activity_main2);
 
         bagEstimatorButton = (Button) findViewById(R.id.bagEstimator);
-        bagEstimatorButton.setOnClickListener(this);
+       // bagEstimatorButton.setOnClickListener(this);
         ImageView bag;
 
         vrService = (Button) findViewById(R.id.vrAsssitant);
-        vrService.setOnClickListener(this);
+       // vrService.setOnClickListener(this);
 
         arFragment = (ArFragment)getSupportFragmentManager().findFragmentById(R.id.sceneform_ux_fragment);
         setUpModel();
@@ -73,7 +73,8 @@ public class MainActivity2 extends AppCompatActivity  implements  View.OnClickLi
 
         ModelRenderable.builder()
                 .setSource(this, R.raw.model)
-                .build().thenAccept( renderable -> modelRenderable = renderable)
+                .build()
+                .thenAccept( renderable -> modelRenderable = renderable)
                 .exceptionally(throwable -> {
                     Toast.makeText(this, "Unable to load Model", Toast.LENGTH_SHORT).show();
                     return null;
@@ -96,6 +97,12 @@ public class MainActivity2 extends AppCompatActivity  implements  View.OnClickLi
             case R.id.vrAsssitant:
                 startActivity(new Intent(this, MainActivity2.class));
                 break;
+//            case R.id.sceneform_ux_fragment:
+//                setUpPlane();
+//                break;
+
+
+
         }
     }
 }
