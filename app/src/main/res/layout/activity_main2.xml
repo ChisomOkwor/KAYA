@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-<!--    <android.opengl.GLSurfaceView-->
-<!--        android:id="@+id/surfaceview"-->
-<!--        android:layout_width="397dp"-->
-<!--        android:layout_height="597dp"-->
-<!--        android:layout_gravity="top"-->
-<!--        android:layout_marginBottom="4dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.636"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
-
 
     <fragment
         android:id="@+id/sceneform_ux_fragment"
@@ -51,8 +40,10 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         android:background="@android:color/holo_blue_light"
-        android:text="Bag Weight Estimator"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
+        android:layout_marginRight="4dp"
+        android:text="PAY EXTRA BAGGAGE FEE"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
